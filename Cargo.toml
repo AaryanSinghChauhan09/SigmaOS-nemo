@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-nemo"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Nemo file manager components"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-nemo"
+readme = "README.md"
+keywords = ["nemo", "file-manager", "desktop"]
+categories = ["gui"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
