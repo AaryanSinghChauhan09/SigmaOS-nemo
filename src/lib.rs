@@ -4,4 +4,4 @@
 pub mod nemo;
 pub mod nemo_actions;
 
-pub use nemo::Nemo;
+pub use nemo::NemoFileManager;
