@@ -1,7 +1,7 @@
-//! SigmaOS Nemo
-//! Nemo file manager components
+//! SigmaOS-nemo — utility model.
 
-pub mod nemo;
-pub mod nemo_actions;
+pub mod util;
+pub mod options;
 
-pub use nemo::NemoFileManager;
+pub use util::Model;
+pub use options::{Mode, Options};
