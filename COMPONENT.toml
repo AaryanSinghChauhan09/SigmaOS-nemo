@@ -3,12 +3,12 @@ name = "SigmaOS-nemo"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "nemo component"
+description = "Nemo file manager component for SigmaOS"
 upstream = []
 
 [contract]
 provides = ["component"]
-depends_on = []
+depends_on = ["SigmaOS-system"]
 
 [maturity]
 status = "Scaffold"
