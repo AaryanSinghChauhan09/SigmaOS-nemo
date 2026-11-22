@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-nemo Component Wiki
+# SigmaOS-nemo Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-nemo provides Nemo file manager component for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-nemo provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-nemo Abstraction
-- Fail-Fast on SigmaOS-nemo Initialization Errors
-- Deterministic SigmaOS-nemo Setup
-- Clear Abstraction Over SigmaOS-nemo APIs
-- Composition over Inheritance for SigmaOS-nemo extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-nemo Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-nemo Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-nemo Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-nemo APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-nemo extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-nemo follows a SigmaOS-nemo pattern:
+SigmaOS-nemo follows a SigmaOS-nemo pattern:
 - **SigmaOS-nemo Core**: Provides SigmaOS-nemo support, SigmaOS-nemo management, and SigmaOS-nemo tracking
 - **Management**: Supports SigmaOS-nemo management, SigmaOS-nemo configuration, and SigmaOS-nemo lifecycle
 - **Tracking**: Supports SigmaOS-nemo status, SigmaOS-nemo tracking, and SigmaOS-nemo lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-nemo follows a SigmaOS-nemo pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-nemo by given configuration
--  - Register a SigmaOS-nemo by given name
--  - Get SigmaOS-nemo status and SigmaOS-nemo availability
--  - Track SigmaOS-nemo management and SigmaOS-nemo tracking
+- Manage a SigmaOS-nemo by given configuration
+- Register a SigmaOS-nemo by given name
+- Get SigmaOS-nemo status and SigmaOS-nemo availability
+- Track SigmaOS-nemo management and SigmaOS-nemo tracking
 - Error types for SigmaOS-nemo failure scenarios or unsupported SigmaOS-nemo types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-nemo init, SigmaOS-nemo management)
 3. **Assert**: Verify the expected SigmaOS-nemo results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-nemo initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-nemo failure scenarios
 - Unit tests provided for SigmaOS-nemo management and configuration
